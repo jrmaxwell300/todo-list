@@ -1,0 +1,120 @@
+:root{
+    --main-orange:rgb(225, 136, 0);
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: var(--main-orange);
+}
+.todo-container{
+    max-width: 100%;
+    margin: 0 auto;
+    background: #d6f4f8;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow:0 0 15px rgb(0,0,0, 0.25);
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #fff;
+    
+}
+.todo-input{
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+}
+.todo-input:focus{
+    outline: none;
+}
+#add-task-bnt{
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    background-color:var(--main-orange) ;
+    color: #fff;
+}
+#add-task-bnt:hover{
+    background-color: #fff;
+    color: var(--main-orange);
+    cursor: pointer;
+    border: 1px solid var(--main-orange);
+}
+
+.todo-list{
+list-style-type: none;
+padding: 0;
+
+}
+.todo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.delete-bnt{
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color: var(--main-orange);
+    color: #fff;
+}
+.delete-bnt:hover{
+    background-color: #fff;
+    color: var(--main-orange);
+    cursor: pointer;
+    border: 1px solid var(--main-orange);
+    
+}
+.todo-item.completed{
+    text-decoration: line-through 2px var(--main-orange);
+    opacity: 0.7;
+}
+.notes{ 
+    
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow:0 0 15px rgb(0,0,0, 0.25);
+    display: flex;
+}
+p{
+    border: 1px solid var(--main-orange);
+    color: #fff;
+    padding: 5px;
+    background-color: var(--main-orange);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 10%;
+}
+.note-input{
+    border: none;
+    padding: 10px;
+    border-radius: 19px;
+    width: 70%;
+    background: #d6f4f8;
+
+}
+.date{
+    background-color:var(--main-orange);
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    margin: 10px;
+    padding: 0 0 0 5px;
+}
